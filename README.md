@@ -28,4 +28,4 @@ make qgc
 ```
 komutları kullanılır.
 
-QGroundControl için hazır plan `myplan3.plan` dosyasındadır. **Logo>Plan Flight>File>Open**'a tıklanıp bu plan dosyası seçilebilir.
+QGroundControl için hazır plan `myplan3.plan` dosyasındadır. **Logo > Plan Flight > File > Open**'a tıklanıp bu plan dosyası seçilebilir.
