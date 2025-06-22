@@ -28,3 +28,11 @@ install:
 	@curl -O https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl-x86_64.AppImage
 	@chmod +x ./QGroundControl-x86_64.AppImage
 
+install_without_perm:
+	@git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+	@mv ./PX4-Autopilot/Tools/simulation/gz/models/tiltrotor tiltrotor-old
+	@cp -r ./custom/models/* ./PX4-Autopilot/Tools/simulation/gz/models/
+	@cp -r ./custom/worlds/* ./PX4-Autopilot/Tools/simulation/gz/worlds/
+	@pip install opencv-python-headless PyGObject numpy ultralytics pillow
+	@curl -O https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl-x86_64.AppImage
+	@chmod +x ./QGroundControl-x86_64.AppImage
