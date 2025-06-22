@@ -2,16 +2,16 @@
 ## Kurulum
 Simulasyonun çalışması için Gazebo Harmonic (v8.9.0) kurulu olmalıdır.
 Dosyalar aşağıdaki komut ile indirilebilir:
-```git clone https://github.com/az47klk/konrul-vtol-simulation.git```
+`git clone https://github.com/az47klk/konrul-vtol-simulation.git`
 Dosyalar indirildikten sonra dizin içinde terminal açılıp:
-```make install```
+`make install`
 yazılarak gerekli programlar, kütüphaneler ve izinler ayarlanır. Eğer daha önceden QGroundControl kullanılmışsa izinleri ayarlama kısmı atlanabilir:
-```make install_without_perm```
+`make install_without_perm`
 ## Kullanım
 Simulasyonu başlatmak için: 
-```make start_sim```
+`make start_sim`
 Engel tespit yazılımını başlatmak için:
-```make cam```
+`make cam`
 QGroundControl yazılımını başlatmak için: 
-```make qgc```
+`make qgc`
 komutları kullanılır.
