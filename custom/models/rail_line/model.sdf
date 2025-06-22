@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.10'>
+ <model name="rail_line">
+  <static>true</static>
+  <pose>0 0 0.01 0 0 0</pose>
+  <link name="rail_link">
+
+    <!-- Raylar -->
+    <visual name="rail_left">
+      <pose>0 0.75 0.05 0 0 0</pose>
+      <geometry>
+        <box><size>3 0.1 0.1</size></box>
+      </geometry>
+      <material>
+        <ambient>0.8 0.8 0.8 1</ambient>
+        <diffuse>0.9 0.9 0.9 1</diffuse> <!-- Parlak çelik -->
+      </material>
+    </visual>
+
+    <visual name="rail_right">
+      <pose>0 -0.75 0.05 0 0 0</pose>
+      <geometry>
+        <box><size>3 0.1 0.1</size></box>
+      </geometry>
+      <material>
+        <ambient>0.8 0.8 0.8 1</ambient>
+        <diffuse>0.9 0.9 0.9 1</diffuse>
+      </material>
+    </visual>
+
+    <!-- Traversler (ahşap görünümlü kutular) -->
+    <!-- 20 travers, 2m aralıklarla -->
+    <!-- Her biri 1.6m uzunluğunda (rayların altını kaplar), 0.2m genişlik, 0.05m yükseklik -->
+    <!-- Python ile otomatik üretilebilir, ama 3 tane örnek veriyorum -->
+    <!-- Traversler artık raylara dik (X yönünde kısa, Y yönünde uzun) -->
+    <visual name="traverse_1">
+      <pose>1 0 0.025 0 0 0</pose>
+      <geometry><box><size>0.2 2 0.05</size></box></geometry>
+      <material>
+        <ambient>0.4 0.2 0.1 1</ambient>
+        <diffuse>0.5 0.25 0.1 1</diffuse>
+      </material>
+    </visual>
+
+    <visual name="traverse_2">
+      <pose>0 0 0.025 0 0 0</pose>
+      <geometry><box><size>0.2 2 0.05</size></box></geometry>
+      <material>
+        <ambient>0.4 0.2 0.1 1</ambient>
+        <diffuse>0.5 0.25 0.1 1</diffuse>
+      </material>
+    </visual>
+
+    <visual name="traverse_3">
+      <pose>-1 0 0.025 0 0 0</pose>
+      <geometry><box><size>0.2 2 0.05</size></box></geometry>
+      <material>
+        <ambient>0.4 0.2 0.1 1</ambient>
+        <diffuse>0.5 0.25 0.1 1</diffuse>
+      </material>
+    </visual>
+
+    <!-- ...devamı aynı şekilde çoğaltılabilir -->
+    
+  </link>
+</model>
+</sdf>
