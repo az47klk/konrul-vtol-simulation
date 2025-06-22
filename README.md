@@ -27,3 +27,5 @@ QGroundControl yazılımını başlatmak için:
 make qgc
 ```
 komutları kullanılır.
+
+QGroundControl için hazır plan `myplan3.plan` dosyasındadır. **Plan Flight** bölümünden **File** butonuna tıklayıp, **Open**'a tıklanıp bu plan dosyası seçilebilir.
