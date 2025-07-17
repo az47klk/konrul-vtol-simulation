@@ -1,5 +1,4 @@
 # Konrul VTOL Simulasyonu
-Konu ile ilgili Youtube videosu için: https://youtu.be/aX62wb86su0
 ## Kurulum
 Simulasyonun çalışması için Gazebo Harmonic (v8.9.0) kurulu olmalıdır.
 Dosyalar aşağıdaki komut ile indirilebilir:
